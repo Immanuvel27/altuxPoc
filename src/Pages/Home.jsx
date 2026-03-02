@@ -9,7 +9,7 @@ export default function Home() {
     ]
 
     return (
-        <div className="min-h-screen bg-gray-100 py-12 px-4">
+        <div className="bg-gray-100 py-12 px-4">
             <h1 className=" text-primary text-4xl font-bold text-center mb-12">
                 Home Page
             </h1>

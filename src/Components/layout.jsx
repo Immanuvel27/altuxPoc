@@ -30,7 +30,7 @@ export default function Layout({ children }) {
                 </div>
 
                 {/* Content Area */}
-                <div className="flex-1 overflow-auto p-6">
+                <div className="flex-1 p-6">
                     {children}
                 </div>
             </div>
