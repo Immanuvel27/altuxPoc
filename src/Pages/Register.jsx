@@ -181,7 +181,7 @@ export default function Register() {
 
                     {/* Additional Links */}
                     <div className="text-center mt-6 text-xs sm:text-sm text-gray-600">
-                        <p>Already have an account? <a href="/login" className="text-blue-600 hover:underline font-semibold">Sign in</a></p>
+                        <p>Already have an account? <a href="/" className="text-blue-600 hover:underline font-semibold">Sign in</a></p>
                     </div>
                 </div>
             </div>

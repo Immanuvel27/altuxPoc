@@ -1,4 +1,5 @@
 import { useFormik } from 'formik'
+import { useNavigate } from 'react-router-dom'
 import * as Yup from 'yup'
 
 const validationSchema = Yup.object({
@@ -7,6 +8,7 @@ const validationSchema = Yup.object({
 })
 
 export default function Login() {
+      const navigate = useNavigate()
     const formik = useFormik({
         initialValues: {
             email: '',
@@ -14,7 +16,11 @@ export default function Login() {
         },
         validationSchema: validationSchema,
         onSubmit: (values) => {
-            console.log('Form values:', values)
+            
+            if(values.email=="admin@altux.com" && values.password=="Test@123"){
+                alert();
+                navigate('/Home')
+            }
         }
     })
 
