@@ -10,7 +10,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Login />} />        
         <Route path="/register" element={<Register />} />
-        <Route path="/Home" element={<Layout><Home /></Layout>} />
+        <Route path="/Home" element={<Layout title="Home Page"><Home /></Layout>} />
       </Routes>
     </Router>
   )

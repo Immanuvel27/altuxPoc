@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Sidebar from './Sidebar'
 
-export default function Layout({ children }) {
+export default function Layout({ title, children }) {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
@@ -21,7 +21,10 @@ export default function Layout({ children }) {
                         >
                             ☰
                         </button>
-                        <h2 className="text-xl font-semibold text-gray-800">ALtux</h2>
+                        {/* <h2 className="text-xl font-semibold text-gray-800">ALtux</h2> */}
+                    </div>
+                    <div className="flex items-center space-x-4">
+                        <h2 className='text-2xl text-center text-primary font-bold'>{title}</h2>
                     </div>
                     <div className="flex items-center space-x-4">
                         <button className="p-2 hover:bg-gray-100 rounded-lg transition">🔔</button>

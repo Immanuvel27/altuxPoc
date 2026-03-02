@@ -10,9 +10,6 @@ export default function Home() {
 
     return (
         <div className="bg-gray-100 py-12 px-4">
-            <h1 className=" text-primary text-4xl font-bold text-center mb-12">
-                Home Page
-            </h1>
 
             <div className="max-w-5xl mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

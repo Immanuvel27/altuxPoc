@@ -6,7 +6,7 @@ let api= null;
 export const getApi = () => {
   if (!api) {
     api = axios.create({
-      baseURL: getApiUrl(), //  now safe
+      baseURL: getApiUrl(),
       timeout: 100000
       
     });
@@ -23,7 +23,7 @@ export const getApi = () => {
       (error) => Promise.reject(error)
     );
 
-    // 📥 Handle Response
+    //  Handle Response
     api.interceptors.response.use(
       (response) => response.data,
       (error) => {
