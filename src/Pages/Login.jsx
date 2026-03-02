@@ -25,7 +25,7 @@ export default function Login() {
     })
 
     return (
-        <div className="flex flex-col lg:flex-row min-h-screen">
+        <div className="flex flex-col lg:flex-row min-h-screen lg:p-50 md:p-20 p-5">
             {/* Left Side - Image Background */}
             <div className="w-full lg:w-1/2 bg-cover bg-center relative hidden lg:block" style={{
                 backgroundImage: 'url(https://images.pexels.com/photos/9574323/pexels-photo-9574323.jpeg)',
