@@ -25,14 +25,14 @@ export default function Login() {
     })
 
     return (
-        <div className="flex flex-col lg:flex-row min-h-screen lg:p-50 md:p-20 p-5">
+        <div className="flex flex-col lg:flex-row min-h-screen justify-center">
             {/* Left Side - Image Background */}
             <div className="w-full lg:w-1/2 bg-cover bg-center relative hidden lg:block" style={{
                 backgroundImage: 'url(https://images.pexels.com/photos/9574323/pexels-photo-9574323.jpeg)',
                 backgroundPosition: 'center'
             }}>
                 <div className="absolute inset-0 bg-black/40">
-                    <h1 className="text-4xl lg:text-5xl font-bold absolute top-10 lg:top-20 text-white left-1/2 -translate-x-1/2 animate-fade-in">ALtux</h1>
+                    <h1 className="text-4xl lg:text-5xl font-bold absolute top-10 lg:top-20 text-white left-1/2 -translate-x-1/2 animate-fade-in">AltuxDX</h1>
                     <h2 className="text-xl lg:text-2xl text-white font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-fade-in px-4 text-center">
                         Welcome to Our Platform
                     </h2>
@@ -43,7 +43,7 @@ export default function Login() {
             </div>
 
             {/* Right Side - Login Form */}
-            <div className="w-full lg:w-1/2 bg-gray-50 flex flex-col justify-center items-center px-4 sm:px-6 md:px-8 py-8 lg:py-0">
+            <div className="w-full lg:w-1/2 flex flex-col justify-center items-center px-4 sm:px-6 md:px-8 py-8 lg:py-0">
                 <div className="w-full max-w-md">
                     <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-8 text-center">
                         Login

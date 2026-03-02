@@ -47,7 +47,7 @@ export default function Register() {
             }}>
                 {/* Dark Overlay */}
                 <div className="absolute inset-0 bg-black/40">
-                    <h1 className="text-4xl lg:text-5xl font-bold absolute top-10 lg:top-20 text-white left-1/2 -translate-x-1/2 animate-fade-in">ALtux</h1>
+                    <h1 className="text-4xl lg:text-5xl font-bold absolute top-10 lg:top-20 text-white left-1/2 -translate-x-1/2 animate-fade-in">AltuxDX</h1>
                     <h2 className="text-lg lg:text-2xl text-white font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-fade-in px-4 text-center">
                         Join Our Community
                     </h2>

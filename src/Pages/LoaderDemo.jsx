@@ -4,7 +4,7 @@ import { MdFullscreen, MdClose, MdRefresh } from 'react-icons/md'
 import Loader from '../Components/Loader'
 import { useTheme } from '../Components/ThemeContext'
 
-const MESSAGES = ['Loading...', 'Fetching data...', 'Almost there...', 'Please wait...', 'Initializing...']
+const MESSAGES = ['Syncing inventory...', 'Scanning stock levels...', 'Loading catalog...', 'Verifying supplies...', 'Reconciling records...']
 
 export default function LoaderDemo() {
     const { isDark } = useTheme()
@@ -101,7 +101,7 @@ export default function LoaderDemo() {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.4 }}
                         onClick={() => setShowOverlay(false)}
-                        className="fixed top-6 right-6 z-[10000] flex items-center gap-2 px-4 py-2 rounded-xl bg-linear-to-r from-blue-600 to-purple-600 text-white text-sm font-semibold shadow-xl"
+                        className="fixed top-6 right-6 z-10000 flex items-center gap-2 px-4 py-2 rounded-xl bg-linear-to-r from-blue-600 to-purple-600 text-white text-sm font-semibold shadow-xl"
                     >
                         <MdClose className="text-base" />
                         Dismiss
