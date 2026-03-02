@@ -9,8 +9,7 @@ export default function Sidebar({ isOpen, onToggle }) {
     const menuItems = [
         { name: 'Dashboard', path: '/home', icon: '📊' },
         { name: 'Profile', path: '/profile', icon: '👤' },
-        { name: 'Settings', path: '/settings', icon: '⚙️' },
-        { name: 'Logout', path: '/login', icon: '🚪' }
+        { name: 'Settings', path: '/settings', icon: '⚙️' }
     ]
 
     return (
@@ -25,13 +24,13 @@ export default function Sidebar({ isOpen, onToggle }) {
 
             {/* Sidebar */}
             <div
-                className={`fixed lg:static left-0 top-0 h-screen lg:h-auto z-50 lg:z-auto w-64 bg-gray-800 text-white transition-all duration-300 flex flex-col ${
+                className={`fixed lg:static left-0 top-0 min-h-screen lg:h-auto z-50 lg:z-auto w-64 bg-gray-800 text-white transition-all duration-300 flex flex-col ${
                     isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
                 }`}
             >
                 {/* Logo */}
                 <div className="flex items-center justify-between p-4 border-b border-gray-700">
-                    <h1 className="text-2xl font-bold">ALtux</h1>
+                    <h1 className="text-2xl font-bold text-black">ALtux</h1>
                     <button
                         onClick={onToggle}
                         className="lg:hidden p-2 hover:bg-gray-700 rounded-lg transition"
@@ -58,6 +57,18 @@ export default function Sidebar({ isOpen, onToggle }) {
                         </Link>
                     ))}
                 </nav>
+
+                {/* Logout Button */}
+                <div className="p-4 border-t border-gray-700">
+                    <Link
+                        to="/login"
+                        onClick={onToggle}
+                        className="flex items-center space-x-3 p-3 rounded-lg transition text-gray-300 hover:bg-gray-700 hover:text-white"
+                    >
+                        <span className="text-xl">🚪</span>
+                        <span className="text-sm font-medium">Logout</span>
+                    </Link>
+                </div>
 
                 {/* Footer */}
                 <div className="p-4 border-t border-gray-700 text-xs text-gray-400">
